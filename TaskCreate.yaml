@@ -1,7 +1,7 @@
 openapi: "3.0.0"
 info:
   title: "Task Creation APIs"
-  description: "Use the APIs provided by the SAP Health for Patient Engagement solution to create tasks for patients. Ensure you have read the API documentation before proceeding."
+  description: "Use the APIs provided by the SAP Health for Patient Engagement solution to create tasks for patients. Ensure you have read the conceptual documentation before proceeding."
   version: "2.5"
  
 servers:
@@ -111,8 +111,8 @@ paths:
                 example: Not found
 
 externalDocs:
-  description: API Documentation
-  url: https://openweathermap.org/api
+  description: Conceptual Documentation
+  url: https://nikhil-mukunda.github.io/TaskCreation/sampledocumentation
 
 components:
 

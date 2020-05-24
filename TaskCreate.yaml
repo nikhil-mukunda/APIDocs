@@ -1,4 +1,4 @@
-openapi: "3.0.0"
+fopenapi: "3.0.0"
 info:
   title: "Task Creation APIs"
   description: "Use the APIs provided by the SAP Health for Patient Engagement solution to create tasks for patients. Ensure you have read the conceptual documentation before proceeding."
@@ -14,8 +14,8 @@ paths:
   /UnitOfMeasures:
     post:
       tags:
-      - Post Units of Measure
-      summary: "Post the units of measure for all your numeric tasks"
+      - Specify Units of Measure
+      summary: "Specify the units of measure for all your numeric tasks"
       description: "You can define a specific unit of measure (UoM) and then use the UoM for various numerical tasks. This action enables you 
       to define a UoM once and reuse it in various numerical tasks."
       operationId: UnitsofMeasure
@@ -47,9 +47,9 @@ paths:
   /MeasurementStagings:
     put:
       tags:
-      - Upload the tasks to staging area
+      - Add your tasks to staging area
       summary: "Add your XML to the staging area"
-      description: "<b> Ensure you have created the XML for tasks before proceeding. </b> If you have multiple XMLs, you can stage all of them and activate each XML later. This ensures that only the tasks that you need are activated and the rest can be activated as necessary. For example, the head physician specifies the list of tasks that are required to a technical user. The technical user creates XMLs for these tasks and saves them in the system. the head physician can then ask the technical user to activate individual tasks whenever necessary."
+      description: "<b> Ensure you have created the XML for tasks before proceeding. </b> If you have multiple XMLs, you can stage all of them and activate each XML later. This ensures that only the tasks that you need are activated and the rest can be activated as necessary. For example, a physician specifies the list of tasks that are required to a technical user. The technical user creates XMLs for these tasks and stages them in the system. The physician can then ask the technical user to activate individual tasks whenever necessary."
       operationId: StageMeasurement
       parameters:
         - name: MeasurementID

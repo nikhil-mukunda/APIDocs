@@ -223,47 +223,47 @@ components:
                       type: object
                       properties:
                         uppernormal:
-                         type: number
-                         description: Upper Normal Value
-                         example: 9
+                         type: string
+                         description: Upper Normal in various languages
+                         example: Upper Normal
                          properties:
                            language:
-                             type: string
-                             description: Upper Normal in a language like EN or FR
-                             example: Upper Normal
+                             type: number
+                             description: Value of upper normal
+                             example: 12
                              xml:
                                attribute: true
                         lowernormal:
-                          type: number
-                          description: Lower normal value
-                          example: 6
+                          type: string
+                          description: Lower normal in various languages 
+                          example: Lower Normal
                           properties:
-                            language:
-                              type: string
-                              description: Lower Normal in a language like EN or FR
-                              example: lower normal 
+                            Value:
+                              type: number 
+                              description: Value of lower normal
+                               example: 5
                               xml:
                                 attribute: true                              
                         hyperValue:
                           type: string
-                          description:  The maximum value after which patient's health is in danger.
-                          example: 16
+                          description: Hyper in various languages  
+                          example: Hyper
                           properties:
                             language:
-                              type: string
-                              description: Hyper in a language like EN or FR
-                              example: lower normal 
+                              type: number
+                              description: The maximum value after which patient's health is in danger.
+                              example: 16 
                               xml:
                                 attribute: true      
                         hypoValue:
                           type: string
-                          description: The minimum value below which the patient's health is in danger.
-                          example: 3
+                          description: Hypo in various languages
+                          example: Hypo 
                           properties:
                             language:
-                              type: string
-                              description: Hypo in a language like EN or FR
-                              example: Hypo
+                              type: number
+                              description: The minimum value below which the patient's health is in danger.
+                              example: 3
                               xml:
                                 attribute: true   
         categoryMeasurementTypes:
